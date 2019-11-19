@@ -1,0 +1,31 @@
+<div class="container"> 
+  <table class="table table-bordered mt-5">
+    <thead>
+      <tr>
+        <th>Client Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>DOB</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let clients of searchResult">
+        <td>{{clients.ClientId}}</td>
+        <td>{{clients.FirstName}}</td> 
+        <td>{{clients.LastName}}</td>
+        <td>{{clients.Dob}}</td>
+        <td *ngFor="let Add of clients.ClientAddress">{{Add.Address}}</td>
+        </tr>  
+    </tbody>
+    </table>
+</div>      
+        
+        
+
+
+
+          
+      
+       
+   
